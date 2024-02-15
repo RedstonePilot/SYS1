@@ -1,0 +1,2 @@
+vhdl work "Logic.vhf"
+vhdl work "Logic_TB.vhd"

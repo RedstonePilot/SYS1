@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/pkq500/Logic_Gates/Logic.xst" -ofn "C:/Users/pkq500/Logic_Gates/Logic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z010-clg400-3 Logic.ngc Logic.ngd  
+map -intstyle ise -p xc7z010-clg400-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Logic_map.ncd Logic.ngd Logic.pcf 
+par -w -intstyle ise -ol high -mt off Logic_map.ncd Logic.ncd Logic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Logic.twx Logic.ncd -o Logic.twr Logic.pcf 
+bitgen -intstyle ise -f Logic.ut Logic.ncd 
+xst -intstyle ise -ifn "C:/Users/pkq500/Logic_Gates/Logic.xst" -ofn "C:/Users/pkq500/Logic_Gates/Logic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Logic.ucf -p xc7z010-clg400-3 Logic.ngc Logic.ngd  
+map -intstyle ise -p xc7z010-clg400-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Logic_map.ncd Logic.ngd Logic.pcf 
+par -w -intstyle ise -ol high -mt off Logic_map.ncd Logic.ncd Logic.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Logic.twx Logic.ncd -o Logic.twr Logic.pcf -ucf Logic.ucf 
+bitgen -intstyle ise -f Logic.ut Logic.ncd 

@@ -1,0 +1,28 @@
+Command line:
+   Logic_Logic_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51160
+
+Thu Feb 15 09:56:43 2024
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 5964.44 Meg
+
+ Total Signals          : 39
+ Total Nets             : 30
+ Total Signal Drivers   : 5
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 4
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 513
+
+ Total Simulation Time: 0.203125 sec
+
+ Current Memory Usage: 4863.44 Meg
+
+Thu Feb 15 10:01:02 2024
+

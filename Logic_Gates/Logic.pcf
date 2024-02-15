@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Feb 15 10:13:09 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Red" LOCATE = SITE "U15" LEVEL 1;
+COMP "Green" LOCATE = SITE "V17" LEVEL 1;
+COMP "SW0" LOCATE = SITE "V15" LEVEL 1;
+COMP "SW1" LOCATE = SITE "W15" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/pkq500/Logic_Gates/Logic_Logic_sch_tb_isim_beh.exe" -prj "C:/Users/pkq500/Logic_Gates/Logic_Logic_sch_tb_beh.prj" "work.Logic_Logic_sch_tb" 
