@@ -1,0 +1,4 @@
+vhdl work "virtual_wires/virtual_wires.vhd"
+verilog work "clock_divider.vf"
+verilog work "bug_trap_controller.vf"
+verilog work "bug_trap.vf"

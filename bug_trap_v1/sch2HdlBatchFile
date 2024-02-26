@@ -1,0 +1,2 @@
+sch2hdl,-sympath,C:/Users/pkq500/bug_trap_v1/virtual_wires,-intstyle,ise,-family,zynq,-verilog,C:/Users/pkq500/bug_trap_v1/bug_trap_controller.vf,-w,C:/Users/pkq500/bug_trap_v1/Src/bug_trap_controller.sch
+sch2hdl,-sympath,C:/Users/pkq500/bug_trap_v1/virtual_wires,-intstyle,ise,-family,zynq,-verilog,C:/Users/pkq500/bug_trap_v1/bug_trap.vf,-w,C:/Users/pkq500/bug_trap_v1/Src/bug_trap.sch

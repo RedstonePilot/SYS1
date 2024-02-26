@@ -1,0 +1,202 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : bug_trap.vf
+// /___/   /\     Timestamp : 02/22/2024 10:32:49
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/pkq500/bug_trap_v1/virtual_wires -intstyle ise -family zynq -verilog C:/Users/pkq500/bug_trap_v1/bug_trap.vf -w C:/Users/pkq500/bug_trap_v1/Src/bug_trap.sch
+//Design Name: bug_trap
+//Device: zynq
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB16CE_HXILINX_bug_trap(CEO, Q, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 16'b1111_1111_1111_1111;
+   
+   output             CEO;
+   output [15:0]      Q;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg    [15:0]      Q;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 16'b0000_0000_0000_0000;
+	else if (CE)
+	  Q <= Q + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = (Q == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module bug_trap_controller_MUSER_bug_trap(FIRE, 
+                                          MODE, 
+                                          OSC, 
+                                          SENSOR_1, 
+                                          SENSOR_2, 
+                                          LED, 
+                                          SERVO);
+
+    input FIRE;
+    input MODE;
+    input OSC;
+    input SENSOR_1;
+    input SENSOR_2;
+   output LED;
+   output SERVO;
+   
+   wire XLXN_315;
+   wire XLXN_316;
+   wire XLXN_317;
+   wire XLXN_318;
+   wire XLXN_326;
+   wire XLXN_327;
+   wire XLXN_335;
+   wire XLXN_336;
+   wire XLXN_337;
+   wire XLXN_338;
+   wire XLXN_339;
+   wire XLXN_340;
+   
+   BUF  XLXI_1 (.I(SENSOR_1), 
+               .O(XLXN_315));
+   BUF  XLXI_2 (.I(SENSOR_2), 
+               .O(XLXN_316));
+   BUF  XLXI_3 (.I(MODE), 
+               .O(XLXN_327));
+   BUF  XLXI_4 (.I(FIRE), 
+               .O(XLXN_339));
+   BUF  XLXI_9 (.I(XLXN_337), 
+               .O(SERVO));
+   BUF  XLXI_10 (.I(XLXN_338), 
+                .O(LED));
+   BUF  XLXI_13 (.I(OSC), 
+                .O());
+   INV  XLXI_66 (.I(XLXN_315), 
+                .O(XLXN_317));
+   INV  XLXI_67 (.I(XLXN_316), 
+                .O(XLXN_318));
+   OR2  XLXI_68 (.I0(XLXN_318), 
+                .I1(XLXN_317), 
+                .O(XLXN_326));
+   INV  XLXI_69 (.I(XLXN_327), 
+                .O(XLXN_338));
+   AND2  XLXI_70 (.I0(XLXN_327), 
+                 .I1(XLXN_326), 
+                 .O(XLXN_335));
+   AND2  XLXI_71 (.I0(XLXN_340), 
+                 .I1(XLXN_338), 
+                 .O(XLXN_336));
+   OR2  XLXI_72 (.I0(XLXN_336), 
+                .I1(XLXN_335), 
+                .O(XLXN_337));
+   INV  XLXI_73 (.I(XLXN_339), 
+                .O(XLXN_340));
+endmodule
+`timescale 1ns / 1ps
+
+module clock_divider_MUSER_bug_trap(CLK, 
+                                    CLR, 
+                                    CLK_OUT);
+
+    input CLK;
+    input CLR;
+   output CLK_OUT;
+   
+   wire [15:0] CNT;
+   wire XLXN_1;
+   wire XLXN_5;
+   
+   (* HU_SET = "XLXI_3_0" *) 
+   CB16CE_HXILINX_bug_trap  XLXI_3 (.C(CLK), 
+                                   .CE(XLXN_5), 
+                                   .CLR(CLR), 
+                                   .CEO(XLXN_1), 
+                                   .Q(), 
+                                   .TC());
+   (* HU_SET = "XLXI_4_1" *) 
+   CB16CE_HXILINX_bug_trap  XLXI_4 (.C(CLK), 
+                                   .CE(XLXN_1), 
+                                   .CLR(CLR), 
+                                   .CEO(), 
+                                   .Q(CNT[15:0]), 
+                                   .TC());
+   BUF  XLXI_7 (.I(CNT[6]), 
+               .O(CLK_OUT));
+   VCC  XLXI_11 (.P(XLXN_5));
+endmodule
+`timescale 1ns / 1ps
+
+module bug_trap(clk_i, 
+                pio_A_i, 
+                rst_i, 
+                LED_o, 
+                pio_B_o, 
+                pio_D_o, 
+                sel_bus_o, 
+                sel_ser_i2c_o, 
+                i2c_scl_io, 
+                i2c_sda_io, 
+                pio_C_io);
+
+    input clk_i;
+    input [6:0] pio_A_i;
+    input rst_i;
+   output [1:0] LED_o;
+   output [6:0] pio_B_o;
+   output [7:0] pio_D_o;
+   output [2:0] sel_bus_o;
+   output sel_ser_i2c_o;
+    inout i2c_scl_io;
+    inout i2c_sda_io;
+    inout [7:0] pio_C_io;
+   
+   wire [1:0] pio_F_i;
+   wire [3:0] pio_F_o;
+   wire XLXN_5;
+   wire XLXN_20;
+   
+   clock_divider_MUSER_bug_trap  CLOCK (.CLK(XLXN_5), 
+                                       .CLR(rst_i), 
+                                       .CLK_OUT(XLXN_20));
+   virtual_wires  COMMS (.clk_i(clk_i), 
+                        .pio_A_i(pio_A_i[6:0]), 
+                        .pio_F_i(pio_F_i[1:0]), 
+                        .rst_i(rst_i), 
+                        .clk_10MHz_o(XLXN_5), 
+                        .LED_o(LED_o[1:0]), 
+                        .pio_B_o(pio_B_o[6:0]), 
+                        .pio_D_o(pio_D_o[7:0]), 
+                        .pio_F_o(pio_F_o[3:0]), 
+                        .sel_bus_o(sel_bus_o[2:0]), 
+                        .sel_ser_i2c_o(sel_ser_i2c_o), 
+                        .i2c_scl_io(i2c_scl_io), 
+                        .i2c_sda_io(i2c_sda_io), 
+                        .pio_C_io(pio_C_io[7:0]));
+   bug_trap_controller_MUSER_bug_trap  CONTROLLER (.FIRE(pio_F_o[0]), 
+                                                  .MODE(pio_F_o[1]), 
+                                                  .OSC(XLXN_20), 
+                                                  .SENSOR_1(pio_F_o[3]), 
+                                                  .SENSOR_2(pio_F_o[2]), 
+                                                  .LED(pio_F_i[1]), 
+                                                  .SERVO(pio_F_i[0]));
+endmodule

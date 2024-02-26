@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="bug_trap_v1.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="bug_trap.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="bug_trap.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="bug_trap.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="bug_trap.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="bug_trap.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="bug_trap.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="bug_trap.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="bug_trap.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="bug_trap.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="bug_trap.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="bug_trap.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="bug_trap.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="bug_trap.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="bug_trap.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bug_trap.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="bug_trap.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="bug_trap.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="bug_trap.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="bug_trap.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="bug_trap.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="bug_trap.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="bug_trap.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="bug_trap.vf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="bug_trap.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="bug_trap.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="bug_trap_controller.vf"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="bug_trap_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="bug_trap_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="bug_trap_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="bug_trap_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="bug_trap_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="bug_trap_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="bug_trap_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="bug_trap_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="bug_trap_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="bug_trap_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="bug_trap_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="bug_trap_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="bug_trap_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="bug_trap_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="bug_trap_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="clock_divider.vf"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1708594827" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1708594827">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1708597970" xil_pn:in_ck="-7516794693504841242" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5296809824633286968" xil_pn:start_ts="1708597968">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="bug_trap.vf"/>
+      <outfile xil_pn:name="bug_trap_controller.vf"/>
+      <outfile xil_pn:name="clock_divider.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1708594829" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8359490358839433859" xil_pn:start_ts="1708594829">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1708594829" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1708594829">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1708594829" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5110751882214582852" xil_pn:start_ts="1708594829">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1708594829" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8912443121649815033" xil_pn:start_ts="1708594829">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1708594829" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-7553449455679048633" xil_pn:start_ts="1708594829">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1708597981" xil_pn:in_ck="-6154163337904840774" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-2261672923245872346" xil_pn:start_ts="1708597970">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="bug_trap.jhd"/>
+      <outfile xil_pn:name="bug_trap.lso"/>
+      <outfile xil_pn:name="bug_trap.ngc"/>
+      <outfile xil_pn:name="bug_trap.ngr"/>
+      <outfile xil_pn:name="bug_trap.prj"/>
+      <outfile xil_pn:name="bug_trap.stx"/>
+      <outfile xil_pn:name="bug_trap.syr"/>
+      <outfile xil_pn:name="bug_trap.xst"/>
+      <outfile xil_pn:name="bug_trap_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1708594842" xil_pn:in_ck="4374258772586251233" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784893472627366486" xil_pn:start_ts="1708594842">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1708597987" xil_pn:in_ck="416087193388859873" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-644191077827597247" xil_pn:start_ts="1708597981">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="bug_trap.bld"/>
+      <outfile xil_pn:name="bug_trap.ngd"/>
+      <outfile xil_pn:name="bug_trap_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1708598014" xil_pn:in_ck="-1754828490644110532" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-3331210236775961722" xil_pn:start_ts="1708597987">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="bug_trap.pcf"/>
+      <outfile xil_pn:name="bug_trap_map.map"/>
+      <outfile xil_pn:name="bug_trap_map.mrp"/>
+      <outfile xil_pn:name="bug_trap_map.ncd"/>
+      <outfile xil_pn:name="bug_trap_map.ngm"/>
+      <outfile xil_pn:name="bug_trap_map.xrpt"/>
+      <outfile xil_pn:name="bug_trap_summary.xml"/>
+      <outfile xil_pn:name="bug_trap_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1708598039" xil_pn:in_ck="-79031450637676459" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-3856391869197242068" xil_pn:start_ts="1708598014">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="bug_trap.ncd"/>
+      <outfile xil_pn:name="bug_trap.pad"/>
+      <outfile xil_pn:name="bug_trap.par"/>
+      <outfile xil_pn:name="bug_trap.ptwx"/>
+      <outfile xil_pn:name="bug_trap.unroutes"/>
+      <outfile xil_pn:name="bug_trap.xpi"/>
+      <outfile xil_pn:name="bug_trap_pad.csv"/>
+      <outfile xil_pn:name="bug_trap_pad.txt"/>
+      <outfile xil_pn:name="bug_trap_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1708598062" xil_pn:in_ck="5137240266230768983" xil_pn:name="TRANEXT_bitFile_zynq" xil_pn:prop_ck="-8808622799194500101" xil_pn:start_ts="1708598039">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="bug_trap.bgn"/>
+      <outfile xil_pn:name="bug_trap.bit"/>
+      <outfile xil_pn:name="bug_trap.drc"/>
+      <outfile xil_pn:name="bug_trap.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1708598074" xil_pn:in_ck="5137240266230756129" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="-8409507046323032070" xil_pn:start_ts="1708598074">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1708598039" xil_pn:in_ck="-1754828490644110664" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1708598030">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="bug_trap.twr"/>
+      <outfile xil_pn:name="bug_trap.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

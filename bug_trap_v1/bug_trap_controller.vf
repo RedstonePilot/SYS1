@@ -1,0 +1,86 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : bug_trap_controller.vf
+// /___/   /\     Timestamp : 02/22/2024 10:32:49
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/pkq500/bug_trap_v1/virtual_wires -intstyle ise -family zynq -verilog C:/Users/pkq500/bug_trap_v1/bug_trap_controller.vf -w C:/Users/pkq500/bug_trap_v1/Src/bug_trap_controller.sch
+//Design Name: bug_trap_controller
+//Device: zynq
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module bug_trap_controller(FIRE, 
+                           MODE, 
+                           OSC, 
+                           SENSOR_1, 
+                           SENSOR_2, 
+                           LED, 
+                           SERVO);
+
+    input FIRE;
+    input MODE;
+    input OSC;
+    input SENSOR_1;
+    input SENSOR_2;
+   output LED;
+   output SERVO;
+   
+   wire XLXN_315;
+   wire XLXN_316;
+   wire XLXN_317;
+   wire XLXN_318;
+   wire XLXN_326;
+   wire XLXN_327;
+   wire XLXN_335;
+   wire XLXN_336;
+   wire XLXN_337;
+   wire XLXN_338;
+   wire XLXN_339;
+   wire XLXN_340;
+   
+   BUF  XLXI_1 (.I(SENSOR_1), 
+               .O(XLXN_315));
+   BUF  XLXI_2 (.I(SENSOR_2), 
+               .O(XLXN_316));
+   BUF  XLXI_3 (.I(MODE), 
+               .O(XLXN_327));
+   BUF  XLXI_4 (.I(FIRE), 
+               .O(XLXN_339));
+   BUF  XLXI_9 (.I(XLXN_337), 
+               .O(SERVO));
+   BUF  XLXI_10 (.I(XLXN_338), 
+                .O(LED));
+   BUF  XLXI_13 (.I(OSC), 
+                .O());
+   INV  XLXI_66 (.I(XLXN_315), 
+                .O(XLXN_317));
+   INV  XLXI_67 (.I(XLXN_316), 
+                .O(XLXN_318));
+   OR2  XLXI_68 (.I0(XLXN_318), 
+                .I1(XLXN_317), 
+                .O(XLXN_326));
+   INV  XLXI_69 (.I(XLXN_327), 
+                .O(XLXN_338));
+   AND2  XLXI_70 (.I0(XLXN_327), 
+                 .I1(XLXN_326), 
+                 .O(XLXN_335));
+   AND2  XLXI_71 (.I0(XLXN_340), 
+                 .I1(XLXN_338), 
+                 .O(XLXN_336));
+   OR2  XLXI_72 (.I0(XLXN_336), 
+                .I1(XLXN_335), 
+                .O(XLXN_337));
+   INV  XLXI_73 (.I(XLXN_339), 
+                .O(XLXN_340));
+endmodule

@@ -1,0 +1,3 @@
+vhdl work "mux_2.vhf"
+vhdl work "bug_trap_controller.vhf"
+vhdl work "TB/bug_trap_TB.vhd"

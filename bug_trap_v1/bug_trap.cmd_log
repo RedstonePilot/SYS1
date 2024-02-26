@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "C:/Users/pkq500/bug_trap_v1/bug_trap.xst" -ofn "C:/Users/pkq500/bug_trap_v1/bug_trap.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd virtual_wires -nt timestamp -uc Src/FPGA.ucf -p xc7z010-clg400-3 bug_trap.ngc bug_trap.ngd  
+map -intstyle ise -p xc7z010-clg400-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bug_trap_map.ncd bug_trap.ngd bug_trap.pcf 
+par -w -intstyle ise -ol high -mt off bug_trap_map.ncd bug_trap.ncd bug_trap.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bug_trap.twx bug_trap.ncd -o bug_trap.twr bug_trap.pcf 
+bitgen -intstyle ise -f bug_trap.ut bug_trap.ncd 
+xst -intstyle ise -ifn "C:/Users/pkq500/bug_trap_v1/bug_trap.xst" -ofn "C:/Users/pkq500/bug_trap_v1/bug_trap.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd virtual_wires -nt timestamp -uc Src/FPGA.ucf -p xc7z010-clg400-3 bug_trap.ngc bug_trap.ngd  
+map -intstyle ise -p xc7z010-clg400-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bug_trap_map.ncd bug_trap.ngd bug_trap.pcf 
+par -w -intstyle ise -ol high -mt off bug_trap_map.ncd bug_trap.ncd bug_trap.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bug_trap.twx bug_trap.ncd -o bug_trap.twr bug_trap.pcf 
+bitgen -intstyle ise -f bug_trap.ut bug_trap.ncd 
+xst -intstyle ise -ifn "C:/Users/pkq500/bug_trap_v1/bug_trap.xst" -ofn "C:/Users/pkq500/bug_trap_v1/bug_trap.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd virtual_wires -nt timestamp -uc Src/FPGA.ucf -p xc7z010-clg400-3 bug_trap.ngc bug_trap.ngd  
+map -intstyle ise -p xc7z010-clg400-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bug_trap_map.ncd bug_trap.ngd bug_trap.pcf 
+par -w -intstyle ise -ol high -mt off bug_trap_map.ncd bug_trap.ncd bug_trap.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bug_trap.twx bug_trap.ncd -o bug_trap.twr bug_trap.pcf 
+bitgen -intstyle ise -f bug_trap.ut bug_trap.ncd 
+xst -intstyle ise -ifn "C:/Users/pkq500/bug_trap_v1/bug_trap.xst" -ofn "C:/Users/pkq500/bug_trap_v1/bug_trap.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd virtual_wires -nt timestamp -uc Src/FPGA.ucf -p xc7z010-clg400-3 bug_trap.ngc bug_trap.ngd  
+map -intstyle ise -p xc7z010-clg400-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bug_trap_map.ncd bug_trap.ngd bug_trap.pcf 
+par -w -intstyle ise -ol high -mt off bug_trap_map.ncd bug_trap.ncd bug_trap.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bug_trap.twx bug_trap.ncd -o bug_trap.twr bug_trap.pcf 
+bitgen -intstyle ise -f bug_trap.ut bug_trap.ncd 

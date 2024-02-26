@@ -1,0 +1,115 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml top_level.twx top_level.ncd -o top_level.twr top_level.pcf
+
+Design file:              top_level.ncd
+Physical constraint file: top_level.pcf
+Device,package,speed:     xc7z010,clg400,C,-3 (PRELIMINARY 1.08 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_i
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+i2c_scl_io  |    3.476(R)|      SLOW  |   -1.772(R)|      FAST  |XLXN_5            |   0.000|
+i2c_sda_io  |    4.425(R)|      SLOW  |   -1.811(R)|      FAST  |XLXN_5            |   0.000|
+pio_A_i<0>  |    7.130(R)|      SLOW  |   -1.489(R)|      FAST  |XLXN_5            |   0.000|
+pio_A_i<1>  |    6.893(R)|      SLOW  |   -2.098(R)|      FAST  |XLXN_5            |   0.000|
+pio_A_i<2>  |    6.454(R)|      SLOW  |   -1.449(R)|      FAST  |XLXN_5            |   0.000|
+pio_A_i<3>  |    6.404(R)|      SLOW  |   -1.600(R)|      FAST  |XLXN_5            |   0.000|
+pio_A_i<4>  |    7.220(R)|      SLOW  |   -2.269(R)|      FAST  |XLXN_5            |   0.000|
+pio_A_i<5>  |    7.358(R)|      SLOW  |   -2.193(R)|      FAST  |XLXN_5            |   0.000|
+pio_A_i<6>  |    6.399(R)|      SLOW  |   -1.383(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<0> |    7.133(R)|      SLOW  |   -1.451(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<1> |    6.163(R)|      SLOW  |   -1.406(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<2> |    6.304(R)|      SLOW  |   -1.472(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<3> |    6.391(R)|      SLOW  |   -1.501(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<4> |    5.239(R)|      SLOW  |   -1.342(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<5> |    6.548(R)|      SLOW  |   -1.428(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<6> |    5.650(R)|      SLOW  |   -1.467(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<7> |    6.572(R)|      SLOW  |   -1.415(R)|      FAST  |XLXN_5            |   0.000|
+rst_i       |    4.773(R)|      SLOW  |   -1.607(R)|      FAST  |XLXN_5            |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk_i to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED_o<0>    |         5.199(R)|      SLOW  |         1.622(R)|      FAST  |XLXN_5            |   0.000|
+LED_o<1>    |         5.811(R)|      SLOW  |         1.545(R)|      FAST  |XLXN_5            |   0.000|
+i2c_scl_io  |         5.996(R)|      SLOW  |         1.732(R)|      FAST  |XLXN_5            |   0.000|
+i2c_sda_io  |         6.443(R)|      SLOW  |         1.816(R)|      FAST  |XLXN_5            |   0.000|
+pio_B_o<0>  |         5.032(R)|      SLOW  |         1.522(R)|      FAST  |XLXN_5            |   0.000|
+pio_B_o<1>  |         5.051(R)|      SLOW  |         1.534(R)|      FAST  |XLXN_5            |   0.000|
+pio_B_o<2>  |         5.772(R)|      SLOW  |         1.873(R)|      FAST  |XLXN_5            |   0.000|
+pio_B_o<3>  |         5.611(R)|      SLOW  |         1.810(R)|      FAST  |XLXN_5            |   0.000|
+pio_B_o<4>  |         5.290(R)|      SLOW  |         1.665(R)|      FAST  |XLXN_5            |   0.000|
+pio_B_o<5>  |         5.697(R)|      SLOW  |         1.845(R)|      FAST  |XLXN_5            |   0.000|
+pio_B_o<6>  |         5.584(R)|      SLOW  |         1.827(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<0> |         4.827(R)|      SLOW  |         1.320(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<1> |         4.943(R)|      SLOW  |         1.384(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<2> |         4.973(R)|      SLOW  |         1.395(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<3> |         4.906(R)|      SLOW  |         1.327(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<4> |         4.851(R)|      SLOW  |         1.333(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<5> |         4.866(R)|      SLOW  |         1.347(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<6> |         5.029(R)|      SLOW  |         1.407(R)|      FAST  |XLXN_5            |   0.000|
+pio_C_io<7> |         4.894(R)|      SLOW  |         1.334(R)|      FAST  |XLXN_5            |   0.000|
+pio_D_o<0>  |         4.770(R)|      SLOW  |         1.355(R)|      FAST  |XLXN_5            |   0.000|
+pio_D_o<1>  |         5.246(R)|      SLOW  |         1.661(R)|      FAST  |XLXN_5            |   0.000|
+pio_D_o<2>  |         4.932(R)|      SLOW  |         1.458(R)|      FAST  |XLXN_5            |   0.000|
+pio_D_o<3>  |         5.214(R)|      SLOW  |         1.616(R)|      FAST  |XLXN_5            |   0.000|
+pio_D_o<4>  |         4.757(R)|      SLOW  |         1.344(R)|      FAST  |XLXN_5            |   0.000|
+pio_D_o<5>  |         4.917(R)|      SLOW  |         1.491(R)|      FAST  |XLXN_5            |   0.000|
+pio_D_o<6>  |         5.315(R)|      SLOW  |         1.639(R)|      FAST  |XLXN_5            |   0.000|
+pio_D_o<7>  |         4.814(R)|      SLOW  |         1.398(R)|      FAST  |XLXN_5            |   0.000|
+sel_bus_o<0>|         4.923(R)|      SLOW  |         1.459(R)|      FAST  |XLXN_5            |   0.000|
+sel_bus_o<1>|         4.783(R)|      SLOW  |         1.397(R)|      FAST  |XLXN_5            |   0.000|
+sel_bus_o<2>|         4.864(R)|      SLOW  |         1.436(R)|      FAST  |XLXN_5            |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk_i
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_i          |    5.581|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu Feb 22 11:00:10 2024 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4944 MB
+
+
+

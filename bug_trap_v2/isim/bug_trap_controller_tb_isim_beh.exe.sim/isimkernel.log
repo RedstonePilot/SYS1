@@ -1,0 +1,28 @@
+Command line:
+   bug_trap_controller_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51111
+
+Thu Feb 22 11:17:02 2024
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 5964.96 Meg
+
+ Total Signals          : 151
+ Total Nets             : 59
+ Total Signal Drivers   : 34
+ Total Blocks           : 38
+ Total Primitive Blocks : 32
+ Total Processes        : 31
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 542
+
+ Total Simulation Time: 0.421875 sec
+
+ Current Memory Usage: 4863.95 Meg
+
+Thu Feb 22 11:19:39 2024
+
