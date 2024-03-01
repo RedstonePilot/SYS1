@@ -1,0 +1,89 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : onehot_decoder_8.vf
+// /___/   /\     Timestamp : 02/29/2024 10:40:38
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/pkq500/xor_cipher/virtual_wires -intstyle ise -family zynq -verilog C:/Users/pkq500/xor_cipher/onehot_decoder_8.vf -w C:/Users/pkq500/xor_cipher/Src/onehot_decoder_8.sch
+//Design Name: onehot_decoder_8
+//Device: zynq
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module onehot_decoder_8(A, 
+                        B, 
+                        C, 
+                        Y0, 
+                        Y1, 
+                        Y2, 
+                        Y3, 
+                        Y4, 
+                        Y5, 
+                        Y6, 
+                        Y7);
+
+    input A;
+    input B;
+    input C;
+   output Y0;
+   output Y1;
+   output Y2;
+   output Y3;
+   output Y4;
+   output Y5;
+   output Y6;
+   output Y7;
+   
+   wire not_A0;
+   wire not_A1;
+   wire XLXN_33;
+   
+   INV  XLXI_15 (.I(B), 
+                .O(not_A0));
+   INV  XLXI_16 (.I(A), 
+                .O(not_A1));
+   INV  XLXI_21 (.I(C), 
+                .O(XLXN_33));
+   AND3  XLXI_22 (.I0(A), 
+                 .I1(B), 
+                 .I2(C), 
+                 .O(Y7));
+   AND3  XLXI_23 (.I0(not_A1), 
+                 .I1(B), 
+                 .I2(C), 
+                 .O(Y6));
+   AND3  XLXI_24 (.I0(A), 
+                 .I1(not_A0), 
+                 .I2(C), 
+                 .O(Y5));
+   AND3  XLXI_25 (.I0(not_A1), 
+                 .I1(not_A0), 
+                 .I2(C), 
+                 .O(Y4));
+   AND3  XLXI_26 (.I0(A), 
+                 .I1(B), 
+                 .I2(XLXN_33), 
+                 .O(Y3));
+   AND3  XLXI_27 (.I0(not_A1), 
+                 .I1(B), 
+                 .I2(XLXN_33), 
+                 .O(Y2));
+   AND3  XLXI_28 (.I0(A), 
+                 .I1(not_A0), 
+                 .I2(XLXN_33), 
+                 .O(Y1));
+   AND3  XLXI_29 (.I0(not_A1), 
+                 .I1(not_A0), 
+                 .I2(XLXN_33), 
+                 .O(Y0));
+endmodule

@@ -1,0 +1,568 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : top_level.vf
+// /___/   /\     Timestamp : 02/29/2024 10:40:37
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/pkq500/xor_cipher/virtual_wires -intstyle ise -family zynq -verilog C:/Users/pkq500/xor_cipher/top_level.vf -w C:/Users/pkq500/xor_cipher/Src/top_level.sch
+//Design Name: top_level
+//Device: zynq
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module seven_segment_decoder_MUSER_top_level(Y0, 
+                                             Y1, 
+                                             Y2, 
+                                             Y3, 
+                                             Y4, 
+                                             Y5, 
+                                             Y6, 
+                                             Y7, 
+                                             A, 
+                                             B, 
+                                             C, 
+                                             D, 
+                                             E, 
+                                             F, 
+                                             G);
+
+    input Y0;
+    input Y1;
+    input Y2;
+    input Y3;
+    input Y4;
+    input Y5;
+    input Y6;
+    input Y7;
+   output A;
+   output B;
+   output C;
+   output D;
+   output E;
+   output F;
+   output G;
+   
+   
+   OR2  XLXI_1 (.I0(Y1), 
+               .I1(Y4), 
+               .O(A));
+   OR2  XLXI_2 (.I0(Y6), 
+               .I1(Y5), 
+               .O(B));
+   BUF  XLXI_3 (.I(Y2), 
+               .O(C));
+   OR3  XLXI_4 (.I0(Y1), 
+               .I1(Y4), 
+               .I2(Y7), 
+               .O(D));
+   OR5  XLXI_5 (.I0(Y1), 
+               .I1(Y3), 
+               .I2(Y4), 
+               .I3(Y5), 
+               .I4(Y7), 
+               .O(E));
+   OR4  XLXI_6 (.I0(Y1), 
+               .I1(Y2), 
+               .I2(Y3), 
+               .I3(Y7), 
+               .O(F));
+   OR3  XLXI_7 (.I0(Y0), 
+               .I1(Y1), 
+               .I2(Y7), 
+               .O(G));
+endmodule
+`timescale 1ns / 1ps
+
+module onehot_decoder_8_MUSER_top_level(A, 
+                                        B, 
+                                        C, 
+                                        Y0, 
+                                        Y1, 
+                                        Y2, 
+                                        Y3, 
+                                        Y4, 
+                                        Y5, 
+                                        Y6, 
+                                        Y7);
+
+    input A;
+    input B;
+    input C;
+   output Y0;
+   output Y1;
+   output Y2;
+   output Y3;
+   output Y4;
+   output Y5;
+   output Y6;
+   output Y7;
+   
+   wire not_A0;
+   wire not_A1;
+   wire XLXN_33;
+   
+   INV  XLXI_15 (.I(B), 
+                .O(not_A0));
+   INV  XLXI_16 (.I(A), 
+                .O(not_A1));
+   INV  XLXI_21 (.I(C), 
+                .O(XLXN_33));
+   AND3  XLXI_22 (.I0(A), 
+                 .I1(B), 
+                 .I2(C), 
+                 .O(Y7));
+   AND3  XLXI_23 (.I0(not_A1), 
+                 .I1(B), 
+                 .I2(C), 
+                 .O(Y6));
+   AND3  XLXI_24 (.I0(A), 
+                 .I1(not_A0), 
+                 .I2(C), 
+                 .O(Y5));
+   AND3  XLXI_25 (.I0(not_A1), 
+                 .I1(not_A0), 
+                 .I2(C), 
+                 .O(Y4));
+   AND3  XLXI_26 (.I0(A), 
+                 .I1(B), 
+                 .I2(XLXN_33), 
+                 .O(Y3));
+   AND3  XLXI_27 (.I0(not_A1), 
+                 .I1(B), 
+                 .I2(XLXN_33), 
+                 .O(Y2));
+   AND3  XLXI_28 (.I0(A), 
+                 .I1(not_A0), 
+                 .I2(XLXN_33), 
+                 .O(Y1));
+   AND3  XLXI_29 (.I0(not_A1), 
+                 .I1(not_A0), 
+                 .I2(XLXN_33), 
+                 .O(Y0));
+endmodule
+`timescale 1ns / 1ps
+
+module binary_to_7seg_decoder_MUSER_top_level(A, 
+                                              B, 
+                                              C, 
+                                              Y0, 
+                                              Y1, 
+                                              Y2, 
+                                              Y3, 
+                                              Y4, 
+                                              Y5, 
+                                              Y6);
+
+    input A;
+    input B;
+    input C;
+   output Y0;
+   output Y1;
+   output Y2;
+   output Y3;
+   output Y4;
+   output Y5;
+   output Y6;
+   
+   wire D0;
+   wire D1;
+   wire D2;
+   wire D3;
+   wire D4;
+   wire D5;
+   wire D6;
+   wire D7;
+   
+   onehot_decoder_8_MUSER_top_level  XLXI_1 (.A(A), 
+                                            .B(B), 
+                                            .C(C), 
+                                            .Y0(D0), 
+                                            .Y1(D1), 
+                                            .Y2(D2), 
+                                            .Y3(D3), 
+                                            .Y4(D4), 
+                                            .Y5(D5), 
+                                            .Y6(D6), 
+                                            .Y7(D7));
+   seven_segment_decoder_MUSER_top_level  XLXI_3 (.Y0(D0), 
+                                                 .Y1(D1), 
+                                                 .Y2(D2), 
+                                                 .Y3(D3), 
+                                                 .Y4(D4), 
+                                                 .Y5(D5), 
+                                                 .Y6(D6), 
+                                                 .Y7(D7), 
+                                                 .A(Y0), 
+                                                 .B(Y1), 
+                                                 .C(Y2), 
+                                                 .D(Y3), 
+                                                 .E(Y4), 
+                                                 .F(Y5), 
+                                                 .G(Y6));
+endmodule
+`timescale 1ns / 1ps
+
+module onehot_encoder_8_MUSER_top_level(A, 
+                                        B, 
+                                        C, 
+                                        D, 
+                                        E, 
+                                        F, 
+                                        G, 
+                                        H, 
+                                        Y0, 
+                                        Y1, 
+                                        Y2);
+
+    input A;
+    input B;
+    input C;
+    input D;
+    input E;
+    input F;
+    input G;
+    input H;
+   output Y0;
+   output Y1;
+   output Y2;
+   
+   
+   OR4  XLXI_7 (.I0(B), 
+               .I1(D), 
+               .I2(F), 
+               .I3(H), 
+               .O(Y0));
+   OR4  XLXI_10 (.I0(C), 
+                .I1(D), 
+                .I2(G), 
+                .I3(H), 
+                .O(Y1));
+   OR4  XLXI_11 (.I0(E), 
+                .I1(F), 
+                .I2(G), 
+                .I3(H), 
+                .O(Y2));
+endmodule
+`timescale 1ns / 1ps
+
+module reverse_MUSER_top_level(A, 
+                               B, 
+                               C, 
+                               Y0, 
+                               Y1, 
+                               Y2);
+
+    input A;
+    input B;
+    input C;
+   output Y0;
+   output Y1;
+   output Y2;
+   
+   
+   BUF  XLXI_1 (.I(A), 
+               .O(Y2));
+   BUF  XLXI_2 (.I(B), 
+               .O(Y1));
+   BUF  XLXI_3 (.I(C), 
+               .O(Y0));
+endmodule
+`timescale 1ns / 1ps
+
+module encrypt_MUSER_top_level(DA, 
+                               DB, 
+                               DC, 
+                               KA, 
+                               KB, 
+                               KC, 
+                               Y0, 
+                               Y1, 
+                               Y2);
+
+    input DA;
+    input DB;
+    input DC;
+    input KA;
+    input KB;
+    input KC;
+   output Y0;
+   output Y1;
+   output Y2;
+   
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   
+   XOR2  XLXI_13 (.I0(XLXN_11), 
+                 .I1(KA), 
+                 .O(Y0));
+   XOR2  XLXI_14 (.I0(XLXN_10), 
+                 .I1(KB), 
+                 .O(Y1));
+   XOR2  XLXI_15 (.I0(XLXN_9), 
+                 .I1(KC), 
+                 .O(Y2));
+   reverse_MUSER_top_level  XLXI_16 (.A(DA), 
+                                    .B(DB), 
+                                    .C(DC), 
+                                    .Y0(XLXN_11), 
+                                    .Y1(XLXN_10), 
+                                    .Y2(XLXN_9));
+endmodule
+`timescale 1ns / 1ps
+
+module decrypt_MUSER_top_level(DA, 
+                               DB, 
+                               DC, 
+                               KA, 
+                               KB, 
+                               KC, 
+                               Y0, 
+                               Y1, 
+                               Y2);
+
+    input DA;
+    input DB;
+    input DC;
+    input KA;
+    input KB;
+    input KC;
+   output Y0;
+   output Y1;
+   output Y2;
+   
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   
+   XOR2  XLXI_1 (.I0(KA), 
+                .I1(DA), 
+                .O(XLXN_7));
+   XOR2  XLXI_2 (.I0(KB), 
+                .I1(DB), 
+                .O(XLXN_8));
+   XOR2  XLXI_3 (.I0(KC), 
+                .I1(DC), 
+                .O(XLXN_9));
+   reverse_MUSER_top_level  XLXI_4 (.A(XLXN_7), 
+                                   .B(XLXN_8), 
+                                   .C(XLXN_9), 
+                                   .Y0(Y0), 
+                                   .Y1(Y1), 
+                                   .Y2(Y2));
+endmodule
+`timescale 1ns / 1ps
+
+module top_level(CLK, 
+                 CLR, 
+                 SW_A, 
+                 SW_B, 
+                 SW_C, 
+                 SW_D, 
+                 SW_E, 
+                 SW_F, 
+                 SW_G, 
+                 SW_H, 
+                 A, 
+                 B, 
+                 C, 
+                 D, 
+                 E, 
+                 F, 
+                 G, 
+                 SEL0, 
+                 SEL1, 
+                 SEL2);
+
+    input CLK;
+    input CLR;
+    input SW_A;
+    input SW_B;
+    input SW_C;
+    input SW_D;
+    input SW_E;
+    input SW_F;
+    input SW_G;
+    input SW_H;
+   output A;
+   output B;
+   output C;
+   output D;
+   output E;
+   output F;
+   output G;
+   output SEL0;
+   output SEL1;
+   output SEL2;
+   
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_7;
+   wire XLXN_15;
+   wire XLXN_17;
+   wire XLXN_19;
+   wire XLXN_26;
+   wire XLXN_27;
+   wire XLXN_28;
+   wire XLXN_56;
+   wire XLXN_57;
+   wire XLXN_58;
+   wire XLXN_59;
+   wire XLXN_60;
+   wire XLXN_61;
+   wire XLXN_62;
+   wire XLXN_63;
+   wire XLXN_104;
+   wire XLXN_105;
+   wire XLXN_106;
+   wire XLXN_107;
+   wire XLXN_108;
+   wire XLXN_109;
+   wire XLXN_110;
+   wire XLXN_111;
+   wire XLXN_112;
+   wire XLXN_113;
+   wire XLXN_114;
+   wire XLXN_115;
+   wire XLXN_116;
+   wire XLXN_117;
+   wire XLXN_118;
+   wire XLXN_119;
+   wire XLXN_120;
+   wire XLXN_121;
+   wire XLXN_122;
+   wire XLXN_123;
+   wire XLXN_124;
+   wire XLXN_139;
+   wire XLXN_140;
+   wire XLXN_141;
+   wire XLXN_142;
+   wire XLXN_144;
+   
+   onehot_encoder_8_MUSER_top_level  XLXI_1 (.A(XLXN_56), 
+                                            .B(XLXN_57), 
+                                            .C(XLXN_58), 
+                                            .D(XLXN_59), 
+                                            .E(XLXN_60), 
+                                            .F(XLXN_61), 
+                                            .G(XLXN_62), 
+                                            .H(XLXN_63), 
+                                            .Y0(XLXN_7), 
+                                            .Y1(XLXN_5), 
+                                            .Y2(XLXN_4));
+   binary_to_7seg_decoder_MUSER_top_level  XLXI_2 (.A(XLXN_7), 
+                                                  .B(XLXN_5), 
+                                                  .C(XLXN_4), 
+                                                  .Y0(XLXN_104), 
+                                                  .Y1(XLXN_105), 
+                                                  .Y2(XLXN_106), 
+                                                  .Y3(XLXN_107), 
+                                                  .Y4(XLXN_108), 
+                                                  .Y5(XLXN_109), 
+                                                  .Y6(XLXN_110));
+   binary_to_7seg_decoder_MUSER_top_level  XLXI_3 (.A(XLXN_19), 
+                                                  .B(XLXN_15), 
+                                                  .C(XLXN_17), 
+                                                  .Y0(XLXN_111), 
+                                                  .Y1(XLXN_112), 
+                                                  .Y2(XLXN_113), 
+                                                  .Y3(XLXN_114), 
+                                                  .Y4(XLXN_115), 
+                                                  .Y5(XLXN_116), 
+                                                  .Y6(XLXN_117));
+   binary_to_7seg_decoder_MUSER_top_level  XLXI_4 (.A(XLXN_28), 
+                                                  .B(XLXN_27), 
+                                                  .C(XLXN_26), 
+                                                  .Y0(XLXN_118), 
+                                                  .Y1(XLXN_119), 
+                                                  .Y2(XLXN_120), 
+                                                  .Y3(XLXN_121), 
+                                                  .Y4(XLXN_122), 
+                                                  .Y5(XLXN_123), 
+                                                  .Y6(XLXN_124));
+   encrypt_MUSER_top_level  XLXI_5 (.DA(XLXN_7), 
+                                   .DB(XLXN_5), 
+                                   .DC(XLXN_4), 
+                                   .KA(XLXN_141), 
+                                   .KB(XLXN_140), 
+                                   .KC(XLXN_139), 
+                                   .Y0(XLXN_19), 
+                                   .Y1(XLXN_15), 
+                                   .Y2(XLXN_17));
+   decrypt_MUSER_top_level  XLXI_6 (.DA(XLXN_19), 
+                                   .DB(XLXN_15), 
+                                   .DC(XLXN_17), 
+                                   .KA(XLXN_141), 
+                                   .KB(XLXN_140), 
+                                   .KC(XLXN_139), 
+                                   .Y0(XLXN_28), 
+                                   .Y1(XLXN_27), 
+                                   .Y2(XLXN_26));
+   INV  XLXI_13 (.I(SW_A), 
+                .O(XLXN_56));
+   INV  XLXI_14 (.I(SW_B), 
+                .O(XLXN_57));
+   INV  XLXI_15 (.I(SW_C), 
+                .O(XLXN_58));
+   INV  XLXI_16 (.I(SW_D), 
+                .O(XLXN_59));
+   INV  XLXI_17 (.I(SW_E), 
+                .O(XLXN_60));
+   INV  XLXI_18 (.I(SW_F), 
+                .O(XLXN_61));
+   INV  XLXI_19 (.I(SW_G), 
+                .O(XLXN_62));
+   INV  XLXI_20 (.I(SW_H), 
+                .O(XLXN_63));
+   VCC  XLXI_35 (.P(XLXN_142));
+   GND  XLXI_36 (.G(XLXN_144));
+   BUF  XLXI_38 (.I(XLXN_142), 
+                .O(XLXN_139));
+   BUF  XLXI_39 (.I(XLXN_144), 
+                .O(XLXN_140));
+   BUF  XLXI_40 (.I(XLXN_142), 
+                .O(XLXN_141));
+   virtual_wires  XLXI_42 (.clk_i(CLK), 
+                          .LED_0_A(XLXN_104), 
+                          .LED_0_B(XLXN_105), 
+                          .LED_0_C(XLXN_106), 
+                          .LED_0_D(XLXN_107), 
+                          .LED_0_E(XLXN_108), 
+                          .LED_0_F(XLXN_109), 
+                          .LED_0_G(XLXN_110), 
+                          .LED_1_A(XLXN_111), 
+                          .LED_1_B(XLXN_112), 
+                          .LED_1_C(XLXN_113), 
+                          .LED_1_D(XLXN_114), 
+                          .LED_1_E(XLXN_115), 
+                          .LED_1_F(XLXN_116), 
+                          .LED_1_G(XLXN_117), 
+                          .LED_2_A(XLXN_118), 
+                          .LED_2_B(XLXN_119), 
+                          .LED_2_C(XLXN_120), 
+                          .LED_2_D(XLXN_121), 
+                          .LED_2_E(XLXN_122), 
+                          .LED_2_F(XLXN_123), 
+                          .LED_2_G(XLXN_124), 
+                          .rst_i(CLR), 
+                          .A(A), 
+                          .B(B), 
+                          .C(C), 
+                          .D(D), 
+                          .E(E), 
+                          .F(F), 
+                          .G(G), 
+                          .SEL0(SEL0), 
+                          .SEL1(SEL1), 
+                          .SEL2(SEL2));
+endmodule

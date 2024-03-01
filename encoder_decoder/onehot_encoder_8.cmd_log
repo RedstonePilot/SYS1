@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family zynq -w -refsym onehot_encoder_8 /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/encoder_decoder/onehot_encoder_8.sch /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/encoder_decoder/onehot_encoder_8.sym 

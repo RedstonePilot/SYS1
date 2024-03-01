@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/encoder_decoder/top_level_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="top_level_tb" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/top_level_tb/sw_a" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw_a</obj_property>
+      <obj_property name="ObjectShortName">sw_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/sw_b" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw_b</obj_property>
+      <obj_property name="ObjectShortName">sw_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/sw_c" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw_c</obj_property>
+      <obj_property name="ObjectShortName">sw_c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/sw_d" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw_d</obj_property>
+      <obj_property name="ObjectShortName">sw_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/sw_e" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw_e</obj_property>
+      <obj_property name="ObjectShortName">sw_e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/sw_f" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw_f</obj_property>
+      <obj_property name="ObjectShortName">sw_f</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/sw_g" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw_g</obj_property>
+      <obj_property name="ObjectShortName">sw_g</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/sw_h" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw_h</obj_property>
+      <obj_property name="ObjectShortName">sw_h</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/green" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">green</obj_property>
+      <obj_property name="ObjectShortName">green</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/red" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">red</obj_property>
+      <obj_property name="ObjectShortName">red</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/UUT/y0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">y0</obj_property>
+      <obj_property name="ObjectShortName">y0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/UUT/y1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">y1</obj_property>
+      <obj_property name="ObjectShortName">y1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/UUT/y2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">y2</obj_property>
+      <obj_property name="ObjectShortName">y2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/UUT/y3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">y3</obj_property>
+      <obj_property name="ObjectShortName">y3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/UUT/y4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">y4</obj_property>
+      <obj_property name="ObjectShortName">y4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/UUT/y5" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">y5</obj_property>
+      <obj_property name="ObjectShortName">y5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/UUT/y6" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">y6</obj_property>
+      <obj_property name="ObjectShortName">y6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_level_tb/UUT/y7" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">y7</obj_property>
+      <obj_property name="ObjectShortName">y7</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,5 @@
+MODULE top_level
+	SUBMODULE onehot_encoder_8
+		INSTANCE XLXI_3
+	SUBMODULE onehot_decoder_8
+		INSTANCE XLXI_13

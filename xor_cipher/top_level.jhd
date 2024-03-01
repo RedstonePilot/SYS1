@@ -1,0 +1,15 @@
+MODULE top_level
+	SUBMODULE onehot_encoder_8
+		INSTANCE XLXI_1
+	SUBMODULE binary_to_7seg_decoder
+		INSTANCE XLXI_2
+	SUBMODULE binary_to_7seg_decoder
+		INSTANCE XLXI_3
+	SUBMODULE binary_to_7seg_decoder
+		INSTANCE XLXI_4
+	SUBMODULE encrypt
+		INSTANCE XLXI_5
+	SUBMODULE decrypt
+		INSTANCE XLXI_6
+	SUBMODULE virtual_wires
+		INSTANCE XLXI_42

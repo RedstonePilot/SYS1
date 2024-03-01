@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family zynq -refsym decrypt /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/xor_cipher/decrypt.sch /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/xor_cipher/decrypt.sym 

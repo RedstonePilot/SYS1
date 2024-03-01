@@ -1,0 +1,4 @@
+sch2hdl,-intstyle,ise,-family,zynq,-flat,-suppress,-vhdl,C:/Users/pkq500/seven_segment/onehot_decoder_8.vhf,-w,C:/Users/pkq500/seven_segment/Src/onehot_decoder_8.sch
+sch2hdl,-intstyle,ise,-family,zynq,-flat,-suppress,-vhdl,C:/Users/pkq500/seven_segment/binary_to_7seg_decoder.vhf,-w,C:/Users/pkq500/seven_segment/Src/binary_to_7seg_decoder.sch
+sch2hdl,-intstyle,ise,-family,zynq,-flat,-suppress,-vhdl,C:/Users/pkq500/seven_segment/top_level.vhf,-w,C:/Users/pkq500/seven_segment/Src/top_level.sch
+sch2hdl,-intstyle,ise,-family,zynq,-flat,-suppress,-vhdl,C:/Users/pkq500/seven_segment/binary_to_7seg_decoder.vhf,-w,C:/Users/pkq500/seven_segment/Src/binary_to_7seg_decoder.sch

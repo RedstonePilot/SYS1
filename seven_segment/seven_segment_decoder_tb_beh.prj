@@ -1,0 +1,2 @@
+vhdl work "seven_segment_decoder.vhf"
+vhdl work "TB/seven_segement_decoder_TB.vhd"

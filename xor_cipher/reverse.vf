@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : reverse.vf
+// /___/   /\     Timestamp : 02/29/2024 10:40:37
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/pkq500/xor_cipher/virtual_wires -intstyle ise -family zynq -verilog C:/Users/pkq500/xor_cipher/reverse.vf -w C:/Users/pkq500/xor_cipher/Src/reverse.sch
+//Design Name: reverse
+//Device: zynq
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module reverse(A, 
+               B, 
+               C, 
+               Y0, 
+               Y1, 
+               Y2);
+
+    input A;
+    input B;
+    input C;
+   output Y0;
+   output Y1;
+   output Y2;
+   
+   
+   BUF  XLXI_1 (.I(A), 
+               .O(Y2));
+   BUF  XLXI_2 (.I(B), 
+               .O(Y1));
+   BUF  XLXI_3 (.I(C), 
+               .O(Y0));
+endmodule

@@ -1,0 +1,5 @@
+MODULE top_level
+	SUBMODULE onehot_encoder_8
+		INSTANCE XLXI_3
+	SUBMODULE binary_to_7seg_decoder
+		INSTANCE XLXI_50

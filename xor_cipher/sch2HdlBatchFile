@@ -1,0 +1,8 @@
+sch2hdl,-sympath,C:/Users/pkq500/xor_cipher/virtual_wires,-intstyle,ise,-family,zynq,-verilog,C:/Users/pkq500/xor_cipher/top_level.vf,-w,C:/Users/pkq500/xor_cipher/Src/top_level.sch
+sch2hdl,-sympath,C:/Users/pkq500/xor_cipher/virtual_wires,-intstyle,ise,-family,zynq,-verilog,C:/Users/pkq500/xor_cipher/reverse.vf,-w,C:/Users/pkq500/xor_cipher/Src/reverse.sch
+sch2hdl,-sympath,C:/Users/pkq500/xor_cipher/virtual_wires,-intstyle,ise,-family,zynq,-verilog,C:/Users/pkq500/xor_cipher/decrypt.vf,-w,C:/Users/pkq500/xor_cipher/Src/decrypt.sch
+sch2hdl,-sympath,C:/Users/pkq500/xor_cipher/virtual_wires,-intstyle,ise,-family,zynq,-verilog,C:/Users/pkq500/xor_cipher/onehot_encoder_8.vf,-w,C:/Users/pkq500/xor_cipher/Src/onehot_encoder_8.sch
+sch2hdl,-sympath,C:/Users/pkq500/xor_cipher/virtual_wires,-intstyle,ise,-family,zynq,-verilog,C:/Users/pkq500/xor_cipher/seven_segment_decoder.vf,-w,C:/Users/pkq500/xor_cipher/Src/seven_segment_decoder.sch
+sch2hdl,-sympath,C:/Users/pkq500/xor_cipher/virtual_wires,-intstyle,ise,-family,zynq,-verilog,C:/Users/pkq500/xor_cipher/onehot_decoder_8.vf,-w,C:/Users/pkq500/xor_cipher/Src/onehot_decoder_8.sch
+sch2hdl,-sympath,C:/Users/pkq500/xor_cipher/virtual_wires,-intstyle,ise,-family,zynq,-verilog,C:/Users/pkq500/xor_cipher/encrypt.vf,-w,C:/Users/pkq500/xor_cipher/Src/encrypt.sch
+sch2hdl,-sympath,C:/Users/pkq500/xor_cipher/virtual_wires,-intstyle,ise,-family,zynq,-verilog,C:/Users/pkq500/xor_cipher/binary_to_7seg_decoder.vf,-w,C:/Users/pkq500/xor_cipher/Src/binary_to_7seg_decoder.sch

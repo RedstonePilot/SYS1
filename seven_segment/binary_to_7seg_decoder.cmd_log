@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family zynq -refsym binary_to_7seg_decoder /home/mike/Documents/SYS1_2023/Labs/LAB_03_encoder_decoder/VHDL/seven_segment/Src/binary_to_7seg_decoder.sch /home/mike/Documents/SYS1_2023/Labs/LAB_03_encoder_decoder/VHDL/seven_segment/binary_to_7seg_decoder.sym 

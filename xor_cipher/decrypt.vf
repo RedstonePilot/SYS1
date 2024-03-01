@@ -1,0 +1,86 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : decrypt.vf
+// /___/   /\     Timestamp : 02/29/2024 10:40:37
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/pkq500/xor_cipher/virtual_wires -intstyle ise -family zynq -verilog C:/Users/pkq500/xor_cipher/decrypt.vf -w C:/Users/pkq500/xor_cipher/Src/decrypt.sch
+//Design Name: decrypt
+//Device: zynq
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module reverse_MUSER_decrypt(A, 
+                             B, 
+                             C, 
+                             Y0, 
+                             Y1, 
+                             Y2);
+
+    input A;
+    input B;
+    input C;
+   output Y0;
+   output Y1;
+   output Y2;
+   
+   
+   BUF  XLXI_1 (.I(A), 
+               .O(Y2));
+   BUF  XLXI_2 (.I(B), 
+               .O(Y1));
+   BUF  XLXI_3 (.I(C), 
+               .O(Y0));
+endmodule
+`timescale 1ns / 1ps
+
+module decrypt(DA, 
+               DB, 
+               DC, 
+               KA, 
+               KB, 
+               KC, 
+               Y0, 
+               Y1, 
+               Y2);
+
+    input DA;
+    input DB;
+    input DC;
+    input KA;
+    input KB;
+    input KC;
+   output Y0;
+   output Y1;
+   output Y2;
+   
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   
+   XOR2  XLXI_1 (.I0(KA), 
+                .I1(DA), 
+                .O(XLXN_7));
+   XOR2  XLXI_2 (.I0(KB), 
+                .I1(DB), 
+                .O(XLXN_8));
+   XOR2  XLXI_3 (.I0(KC), 
+                .I1(DC), 
+                .O(XLXN_9));
+   reverse_MUSER_decrypt  XLXI_4 (.A(XLXN_7), 
+                                 .B(XLXN_8), 
+                                 .C(XLXN_9), 
+                                 .Y0(Y0), 
+                                 .Y1(Y1), 
+                                 .Y2(Y2));
+endmodule

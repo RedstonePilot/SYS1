@@ -1,0 +1,6 @@
+vhdtdtfi -lib work virtual_wires.vhd -prj xor_cipher -o virtual_wires.spl -module virtual_wires -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family zynq -w virtual_wires.spl /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/xor_cipher/virtual_wires.sym 
+vhdtdtfi -lib work virtual_wires.vhd -prj xor_cipher -o virtual_wires.spl -module virtual_wires -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family zynq -w virtual_wires.spl /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/xor_cipher/virtual_wires.sym 
+vhdtdtfi -lib work virtual_wires.vhd -prj xor_cipher -o virtual_wires.spl -module virtual_wires -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family zynq -w virtual_wires.spl /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/xor_cipher/virtual_wires.sym 

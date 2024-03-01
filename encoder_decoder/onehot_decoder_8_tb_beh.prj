@@ -1,0 +1,2 @@
+vhdl work "onehot_decoder_8.vhf"
+vhdl work "TB/decoder_TB.vhd"

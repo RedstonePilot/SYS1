@@ -1,0 +1,560 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: top_level.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_level.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_level"
+Output Format                      : NGC
+Target Device                      : xc7z010-3-clg400
+
+---- Source Options
+Top Module Name                    : top_level
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"virtual_wires"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\pkq500\xor_cipher\seven_segment_decoder.vf" into library work
+Parsing module <seven_segment_decoder>.
+Analyzing Verilog file "C:\Users\pkq500\xor_cipher\reverse.vf" into library work
+Parsing module <reverse>.
+Analyzing Verilog file "C:\Users\pkq500\xor_cipher\onehot_decoder_8.vf" into library work
+Parsing module <onehot_decoder_8>.
+Analyzing Verilog file "C:\Users\pkq500\xor_cipher\onehot_encoder_8.vf" into library work
+Parsing module <onehot_encoder_8>.
+Analyzing Verilog file "C:\Users\pkq500\xor_cipher\encrypt.vf" into library work
+Parsing module <reverse_MUSER_encrypt>.
+Parsing module <encrypt>.
+Analyzing Verilog file "C:\Users\pkq500\xor_cipher\decrypt.vf" into library work
+Parsing module <reverse_MUSER_decrypt>.
+Parsing module <decrypt>.
+Analyzing Verilog file "C:\Users\pkq500\xor_cipher\binary_to_7seg_decoder.vf" into library work
+Parsing module <seven_segment_decoder_MUSER_binary_to_7seg_decoder>.
+Parsing module <onehot_decoder_8_MUSER_binary_to_7seg_decoder>.
+Parsing module <binary_to_7seg_decoder>.
+Analyzing Verilog file "C:\Users\pkq500\xor_cipher\top_level.vf" into library work
+Parsing module <seven_segment_decoder_MUSER_top_level>.
+Parsing module <onehot_decoder_8_MUSER_top_level>.
+Parsing module <binary_to_7seg_decoder_MUSER_top_level>.
+Parsing module <onehot_encoder_8_MUSER_top_level>.
+Parsing module <reverse_MUSER_top_level>.
+Parsing module <encrypt_MUSER_top_level>.
+Parsing module <decrypt_MUSER_top_level>.
+Parsing module <top_level>.
+Parsing VHDL file "C:\Users\pkq500\xor_cipher\virtual_wires\virtual_wires.vhd" into library work
+Parsing entity <virtual_wires>.
+Parsing architecture <virtual_wires_arch> of entity <virtual_wires>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top_level>.
+
+Elaborating module <onehot_encoder_8_MUSER_top_level>.
+
+Elaborating module <OR4>.
+
+Elaborating module <binary_to_7seg_decoder_MUSER_top_level>.
+
+Elaborating module <onehot_decoder_8_MUSER_top_level>.
+
+Elaborating module <INV>.
+
+Elaborating module <AND3>.
+
+Elaborating module <seven_segment_decoder_MUSER_top_level>.
+
+Elaborating module <OR2>.
+
+Elaborating module <BUF>.
+
+Elaborating module <OR3>.
+
+Elaborating module <OR5>.
+
+Elaborating module <encrypt_MUSER_top_level>.
+
+Elaborating module <XOR2>.
+
+Elaborating module <reverse_MUSER_top_level>.
+
+Elaborating module <decrypt_MUSER_top_level>.
+
+Elaborating module <VCC>.
+
+Elaborating module <GND>.
+Going to vhdl side to elaborate module virtual_wires
+
+Elaborating entity <virtual_wires> (architecture <virtual_wires_arch>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\pkq500\xor_cipher\virtual_wires\virtual_wires.vhd" Line 123: Assignment to gnd ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\pkq500\xor_cipher\virtual_wires\virtual_wires.vhd" Line 124: Assignment to vcc ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\pkq500\xor_cipher\virtual_wires\virtual_wires.vhd" Line 125: Assignment to gnd_bus ignored, since the identifier is never used
+WARNING:HDLCompiler:89 - "C:\Users\pkq500\xor_cipher\virtual_wires\virtual_wires.vhd" Line 87: <picoblze_top_level> remains a black-box since it has no binding entity.
+Back to verilog to continue elaboration
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top_level>.
+    Related source file is "C:\Users\pkq500\xor_cipher\top_level.vf".
+    Summary:
+	no macro.
+Unit <top_level> synthesized.
+
+Synthesizing Unit <onehot_encoder_8_MUSER_top_level>.
+    Related source file is "C:\Users\pkq500\xor_cipher\top_level.vf".
+WARNING:Xst:647 - Input <A> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <onehot_encoder_8_MUSER_top_level> synthesized.
+
+Synthesizing Unit <binary_to_7seg_decoder_MUSER_top_level>.
+    Related source file is "C:\Users\pkq500\xor_cipher\top_level.vf".
+    Summary:
+	no macro.
+Unit <binary_to_7seg_decoder_MUSER_top_level> synthesized.
+
+Synthesizing Unit <onehot_decoder_8_MUSER_top_level>.
+    Related source file is "C:\Users\pkq500\xor_cipher\top_level.vf".
+    Summary:
+	no macro.
+Unit <onehot_decoder_8_MUSER_top_level> synthesized.
+
+Synthesizing Unit <seven_segment_decoder_MUSER_top_level>.
+    Related source file is "C:\Users\pkq500\xor_cipher\top_level.vf".
+    Summary:
+	no macro.
+Unit <seven_segment_decoder_MUSER_top_level> synthesized.
+
+Synthesizing Unit <encrypt_MUSER_top_level>.
+    Related source file is "C:\Users\pkq500\xor_cipher\top_level.vf".
+    Summary:
+	no macro.
+Unit <encrypt_MUSER_top_level> synthesized.
+
+Synthesizing Unit <reverse_MUSER_top_level>.
+    Related source file is "C:\Users\pkq500\xor_cipher\top_level.vf".
+    Summary:
+	no macro.
+Unit <reverse_MUSER_top_level> synthesized.
+
+Synthesizing Unit <decrypt_MUSER_top_level>.
+    Related source file is "C:\Users\pkq500\xor_cipher\top_level.vf".
+    Summary:
+	no macro.
+Unit <decrypt_MUSER_top_level> synthesized.
+
+Synthesizing Unit <virtual_wires>.
+    Related source file is "C:\Users\pkq500\xor_cipher\virtual_wires\virtual_wires.vhd".
+    Summary:
+	no macro.
+Unit <virtual_wires> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <virtual_wires/picoblze_top_level.ngc>.
+Loading core <picoblze_top_level> for timing and area information for instance <SYSTEM>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top_level> ...
+
+Optimizing unit <onehot_decoder_8_MUSER_top_level> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_level, actual ratio is 0.
+INFO:Xst:2260 - The FF/Latch <sync_sleep_flop> in Unit <processor> is equivalent to the following FF/Latch : <sync_interrupt_flop> 
+INFO:Xst:2260 - The FF/Latch <sync_sleep_flop> in Unit <processor> is equivalent to the following FF/Latch : <sync_interrupt_flop> 
+INFO:Xst:2260 - The FF/Latch <sync_sleep_flop> in Unit <processor> is equivalent to the following FF/Latch : <sync_interrupt_flop> 
+INFO:Xst:2260 - The FF/Latch <sync_sleep_flop> in Unit <processor> is equivalent to the following FF/Latch : <sync_interrupt_flop> 
+INFO:Xst:2260 - The FF/Latch <sync_sleep_flop> in Unit <processor> is equivalent to the following FF/Latch : <sync_interrupt_flop> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top_level.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 299
+#      AND3                        : 24
+#      BUF                         : 12
+#      GND                         : 4
+#      INV                         : 17
+#      LUT2                        : 10
+#      LUT3                        : 34
+#      LUT4                        : 11
+#      LUT5                        : 3
+#      LUT6                        : 45
+#      LUT6_2                      : 50
+#      MUXCY                       : 29
+#      OR2                         : 6
+#      OR3                         : 6
+#      OR4                         : 6
+#      OR5                         : 3
+#      VCC                         : 6
+#      XOR2                        : 6
+#      XORCY                       : 27
+# FlipFlops/Latches                : 153
+#      FD                          : 48
+#      FDC                         : 41
+#      FDCE                        : 29
+#      FDR                         : 21
+#      FDRE                        : 14
+# RAMS                             : 24
+#      RAM16X1S                    : 16
+#      RAM32M                      : 4
+#      RAM64M                      : 2
+#      RAMB36E1                    : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 20
+#      IBUF                        : 9
+#      IBUFG                       : 1
+#      OBUF                        : 10
+# Others                           : 1
+#      MMCME2_ADV                  : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z010clg400-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             153  out of  35200     0%  
+ Number of Slice LUTs:                  210  out of  17600     1%  
+    Number used as Logic:               170  out of  17600     0%  
+    Number used as Memory:               40  out of   6000     0%  
+       Number used as RAM:               40
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    324
+   Number with an unused Flip Flop:     171  out of    324    52%  
+   Number with an unused LUT:           114  out of    324    35%  
+   Number of fully used LUT-FF pairs:    39  out of    324    12%  
+   Number of unique control sets:        14
+
+IO Utilization: 
+ Number of IOs:                          20
+ Number of bonded IOBs:                  19  out of    100    19%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of     60     3%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                    | Load  |
+-----------------------------------+------------------------------------------+-------+
+XLXI_42/SYSTEM/CLOCK_10MHZ/clkout0 | BUFG                                     | 177   |
+XLXI_42/SYSTEM/CPU/rom/enable_b    | NONE(XLXI_42/SYSTEM/CPU/rom/kcpsm6_rom_l)| 2     |
+-----------------------------------+------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------+------------------------------------------+-------+
+Control Signal                                                   | Buffer(FF name)                          | Load  |
+-----------------------------------------------------------------+------------------------------------------+-------+
+XLXI_42/SYSTEM/CPU/rom/enable_b(XLXI_42/SYSTEM/CPU/rom/XST_GND:G)| NONE(XLXI_42/SYSTEM/CPU/rom/kcpsm6_rom_l)| 8     |
+-----------------------------------------------------------------+------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.883ns (Maximum Frequency: 346.861MHz)
+   Minimum input arrival time before clock: 5.727ns
+   Maximum output required time after clock: 0.515ns
+   Maximum combinational path delay: 0.298ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_42/SYSTEM/CLOCK_10MHZ/clkout0'
+  Clock period: 2.883ns (frequency: 346.861MHz)
+  Total number of paths / destination ports: 4473 / 407
+-------------------------------------------------------------------------
+Delay:               2.883ns (Levels of Logic = 11)
+  Source:            XLXI_42/SYSTEM/RAM/ram_high/ram/ram_module[0].ram (RAM)
+  Destination:       XLXI_42/SYSTEM/CPU/core_cpu/processor/zero_flag_flop (FF)
+  Source Clock:      XLXI_42/SYSTEM/CLOCK_10MHZ/clkout0 rising
+  Destination Clock: XLXI_42/SYSTEM/CLOCK_10MHZ/clkout0 rising
+
+  Data Path: XLXI_42/SYSTEM/RAM/ram_high/ram/ram_module[0].ram to XLXI_42/SYSTEM/CPU/core_cpu/processor/zero_flag_flop
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM16X1S:WCLK->O      1   0.700   0.343  ram_module[0].ram (data_out<0>)
+     end scope: 'XLXI_42/SYSTEM/RAM/ram_high/ram:data_out<0>'
+     end scope: 'XLXI_42/SYSTEM/RAM/ram_high:dat_o<0>'
+     LUT3:I1->O            1   0.043   0.456  Mmux_dat_o11 (dat_o<0>)
+     end scope: 'XLXI_42/SYSTEM/RAM:dat_o<0>'
+     begin scope: 'XLXI_42/SYSTEM/CPU:core_dat_i<0>'
+     begin scope: 'XLXI_42/SYSTEM/CPU/core_data_mux:din_a<0>'
+     LUT6:I2->O            1   0.043   0.456  dout<0> (dout<0>)
+     end scope: 'XLXI_42/SYSTEM/CPU/core_data_mux:dout<0>'
+     begin scope: 'XLXI_42/SYSTEM/CPU/core_cpu:d_dat_i<0>'
+     begin scope: 'XLXI_42/SYSTEM/CPU/core_cpu/processor:in_port<0>'
+     LUT6:I2->O            3   0.043   0.289  data_path_loop[0].alu_mux_lut (alu_result<0>)
+     LUT6_2:I0->O5         0   0.120   0.000  lower_zero_lut (lower_zero)
+     MUXCY:DI->O           1   0.218   0.000  lower_zero_muxcy (carry_lower_zero)
+     MUXCY:CI->O           1   0.013   0.000  middle_zero_muxcy (carry_middle_zero)
+     MUXCY:CI->O           1   0.159   0.000  upper_zero_muxcy (zero_flag_value)
+     FDRE:D                   -0.001          zero_flag_flop
+    ----------------------------------------
+    Total                      2.883ns (1.338ns logic, 1.545ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_42/SYSTEM/CLOCK_10MHZ/clkout0'
+  Total number of paths / destination ports: 730 / 31
+-------------------------------------------------------------------------
+Offset:              5.727ns (Levels of Logic = 11)
+  Source:            SW_H (PAD)
+  Destination:       XLXI_42/SYSTEM/IO_PC/input_int_16 (FF)
+  Destination Clock: XLXI_42/SYSTEM/CLOCK_10MHZ/clkout0 rising
+
+  Data Path: SW_H to XLXI_42/SYSTEM/IO_PC/input_int_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.000   0.279  SW_H_IBUF (SW_H_IBUF)
+     INV:I->O              3   0.314   0.438  XLXI_20 (XLXN_63)
+     OR4:I3->O             6   0.165   0.302  XLXI_1/XLXI_11 (XLXN_4)
+     BUF:I->O              1   0.314   0.550  XLXI_5/XLXI_16/XLXI_3 (XLXI_5/XLXN_11)
+     XOR2:I0->O            6   0.043   0.565  XLXI_5/XLXI_13 (XLXN_19)
+     XOR2:I1->O            1   0.051   0.279  XLXI_6/XLXI_1 (XLXI_6/XLXN_7)
+     BUF:I->O              5   0.314   0.298  XLXI_6/XLXI_4/XLXI_1 (XLXN_26)
+     INV:I->O              4   0.314   0.470  XLXI_4/XLXI_1/XLXI_21 (XLXI_4/XLXI_1/XLXN_33)
+     AND3:I2->O            5   0.137   0.569  XLXI_4/XLXI_1/XLXI_28 (XLXI_4/D1)
+     OR4:I0->O             1   0.043   0.279  XLXI_4/XLXI_3/XLXI_6 (XLXN_123)
+     begin scope: 'XLXI_42/SYSTEM:pio_C_C_i<5>'
+     begin scope: 'XLXI_42/SYSTEM/IO_PC:pc_dat_i<5>'
+     FDC:D                    -0.001          input_int_21
+    ----------------------------------------
+    Total                      5.727ns (1.695ns logic, 4.032ns route)
+                                       (29.6% logic, 70.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_42/SYSTEM/CLOCK_10MHZ/clkout0'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              0.515ns (Levels of Logic = 2)
+  Source:            XLXI_42/SYSTEM/IO_PA/output_int_0 (FF)
+  Destination:       A (PAD)
+  Source Clock:      XLXI_42/SYSTEM/CLOCK_10MHZ/clkout0 rising
+
+  Data Path: XLXI_42/SYSTEM/IO_PA/output_int_0 to A
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.232   0.283  output_int_0 (p_dat_o<0>)
+     end scope: 'XLXI_42/SYSTEM/IO_PA:p_dat_o<0>'
+     end scope: 'XLXI_42/SYSTEM:pio_A_o<0>'
+     OBUF:I->O                 0.000          A_OBUF (A)
+    ----------------------------------------
+    Total                      0.515ns (0.232ns logic, 0.283ns route)
+                                       (45.0% logic, 55.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               0.298ns (Levels of Logic = 2)
+  Source:            CLR (PAD)
+  Destination:       XLXI_42/SYSTEM/CLOCK_10MHZ/mmcm_adv_inst:RST (PAD)
+
+  Data Path: CLR to XLXI_42/SYSTEM/CLOCK_10MHZ/mmcm_adv_inst:RST
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.000   0.298  CLR_IBUF (CLR_IBUF)
+     begin scope: 'XLXI_42/SYSTEM:rst_i'
+     begin scope: 'XLXI_42/SYSTEM/CLOCK_10MHZ:RESET'
+    MMCME2_ADV:RST             0.000          mmcm_adv_inst
+    ----------------------------------------
+    Total                      0.298ns (0.000ns logic, 0.298ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock XLXI_42/SYSTEM/CLOCK_10MHZ/clkout0
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+XLXI_42/SYSTEM/CLOCK_10MHZ/clkout0|    2.883|         |         |         |
+----------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.57 secs
+ 
+--> 
+
+Total memory usage is 4636504 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

@@ -1,0 +1,22 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/pkq500/encoder_decoder/onehot_decoder_8_tb_isim_beh.exe -prj C:/Users/pkq500/encoder_decoder/onehot_decoder_8_tb_beh.prj work.onehot_decoder_8_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/pkq500/encoder_decoder/onehot_decoder_8.vhf" into library work
+Parsing VHDL file "C:/Users/pkq500/encoder_decoder/TB/decoder_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture and3_v of entity AND3 [and3_default]
+Compiling architecture behavioral of entity onehot_decoder_8 [onehot_decoder_8_default]
+Compiling architecture behavioral of entity onehot_decoder_8_tb
+Time Resolution for simulation is 1ps.
+Compiled 11 VHDL Units
+Built simulation executable C:/Users/pkq500/encoder_decoder/onehot_decoder_8_tb_isim_beh.exe
+Fuse Memory Usage: 50576 KB
+Fuse CPU Usage: 390 ms

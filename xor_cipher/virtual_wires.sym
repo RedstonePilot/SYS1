@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="virtual_wires">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2019-10-29T15:24:18</timestamp>
+    <pin polarity="Output" x="432" y="32" name="A" />
+    <pin polarity="Output" x="432" y="96" name="B" />
+    <pin polarity="Output" x="432" y="160" name="C" />
+    <pin polarity="Output" x="432" y="224" name="D" />
+    <pin polarity="Output" x="432" y="288" name="E" />
+    <pin polarity="Output" x="432" y="352" name="F" />
+    <pin polarity="Output" x="432" y="416" name="G" />
+    <pin polarity="Input" x="0" y="-352" name="LED_0_A" />
+    <pin polarity="Input" x="0" y="-288" name="LED_0_B" />
+    <pin polarity="Input" x="0" y="-224" name="LED_0_C" />
+    <pin polarity="Input" x="0" y="-160" name="LED_0_D" />
+    <pin polarity="Input" x="0" y="-96" name="LED_0_E" />
+    <pin polarity="Input" x="0" y="-32" name="LED_0_F" />
+    <pin polarity="Input" x="0" y="32" name="LED_0_G" />
+    <pin polarity="Output" x="432" y="576" name="SEL2" />
+    <pin polarity="Output" x="432" y="640" name="SEL1" />
+    <pin polarity="Output" x="432" y="704" name="SEL0" />
+    <pin polarity="Input" x="0" y="288" name="LED_1_A" />
+    <pin polarity="Input" x="0" y="352" name="LED_1_B" />
+    <pin polarity="Input" x="0" y="416" name="LED_1_C" />
+    <pin polarity="Input" x="0" y="480" name="LED_1_D" />
+    <pin polarity="Input" x="0" y="544" name="LED_1_E" />
+    <pin polarity="Input" x="0" y="608" name="LED_1_F" />
+    <pin polarity="Input" x="0" y="672" name="LED_1_G" />
+    <pin polarity="Input" x="0" y="928" name="LED_2_A" />
+    <pin polarity="Input" x="0" y="992" name="LED_2_B" />
+    <pin polarity="Input" x="0" y="1056" name="LED_2_C" />
+    <pin polarity="Input" x="0" y="1120" name="LED_2_D" />
+    <pin polarity="Input" x="0" y="1184" name="LED_2_E" />
+    <pin polarity="Input" x="0" y="1248" name="LED_2_F" />
+    <pin polarity="Input" x="0" y="1312" name="LED_2_G" />
+    <pin polarity="Input" x="0" y="1552" name="clk_i" />
+    <pin polarity="Input" x="0" y="1616" name="rst_i" />
+    <graph>
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="32" type="pin A" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="96" type="pin B" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="160" type="pin C" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="224" type="pin D" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="288" type="pin E" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="352" type="pin F" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="416" type="pin G" />
+        <line x2="432" y1="32" y2="32" x1="368" />
+        <line x2="432" y1="96" y2="96" x1="368" />
+        <line x2="432" y1="160" y2="160" x1="368" />
+        <line x2="432" y1="224" y2="224" x1="368" />
+        <line x2="432" y1="288" y2="288" x1="368" />
+        <line x2="432" y1="352" y2="352" x1="368" />
+        <line x2="432" y1="416" y2="416" x1="368" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin LED_0_A" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin LED_0_B" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin LED_0_C" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin LED_0_D" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin LED_0_E" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin LED_0_F" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="32" type="pin LED_0_G" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <line x2="0" y1="32" y2="32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="576" type="pin SEL2" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="640" type="pin SEL1" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="704" type="pin SEL0" />
+        <line x2="432" y1="576" y2="576" x1="368" />
+        <line x2="432" y1="640" y2="640" x1="368" />
+        <line x2="432" y1="704" y2="704" x1="368" />
+        <rect width="304" x="64" y="-388" height="2052" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="212" y="-408" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="288" type="pin LED_1_A" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="352" type="pin LED_1_B" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="416" type="pin LED_1_C" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="480" type="pin LED_1_D" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="544" type="pin LED_1_E" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="608" type="pin LED_1_F" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="672" type="pin LED_1_G" />
+        <line x2="0" y1="288" y2="288" x1="64" />
+        <line x2="0" y1="352" y2="352" x1="64" />
+        <line x2="0" y1="416" y2="416" x1="64" />
+        <line x2="0" y1="480" y2="480" x1="64" />
+        <line x2="0" y1="544" y2="544" x1="64" />
+        <line x2="0" y1="608" y2="608" x1="64" />
+        <line x2="0" y1="672" y2="672" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="928" type="pin LED_2_A" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="992" type="pin LED_2_B" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="1056" type="pin LED_2_C" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="1120" type="pin LED_2_D" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="1184" type="pin LED_2_E" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="1248" type="pin LED_2_F" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="1312" type="pin LED_2_G" />
+        <line x2="0" y1="928" y2="928" x1="64" />
+        <line x2="0" y1="992" y2="992" x1="64" />
+        <line x2="0" y1="1056" y2="1056" x1="64" />
+        <line x2="0" y1="1120" y2="1120" x1="64" />
+        <line x2="0" y1="1184" y2="1184" x1="64" />
+        <line x2="0" y1="1248" y2="1248" x1="64" />
+        <line x2="0" y1="1312" y2="1312" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="1552" type="pin clk_i" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="1616" type="pin rst_i" />
+        <line x2="0" y1="1552" y2="1552" x1="64" />
+        <line x2="0" y1="1616" y2="1616" x1="64" />
+    </graph>
+</symbol>

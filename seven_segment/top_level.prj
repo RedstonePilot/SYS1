@@ -1,0 +1,5 @@
+vhdl work "seven_segment_decoder.vhf"
+vhdl work "onehot_decoder_8.vhf"
+vhdl work "onehot_encoder_8.vhf"
+vhdl work "binary_to_7seg_decoder.vhf"
+vhdl work "top_level.vhf"

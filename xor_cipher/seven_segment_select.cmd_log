@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family zynq -refsym seven_segment_select /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/xor_cipher/seven_segment_select.sch /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/xor_cipher/seven_segment_select.sym 
+sch2sym -intstyle ise -family zynq -refsym seven_segment_select /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/xor_cipher/seven_segment_select.sch /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/xor_cipher/seven_segment_select.sym 
+sch2sym -intstyle ise -family zynq -w -refsym seven_segment_select /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/xor_cipher/seven_segment_select.sch /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/xor_cipher/seven_segment_select.sym 

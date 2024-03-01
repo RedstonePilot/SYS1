@@ -1,0 +1,29 @@
+#Pmod Header JC                                                                                                                  
+NET "sw_h" LOC = "V15" | IOSTANDARD = LVCMOS33 ;		 
+NET "sw_g" LOC = "W15" | IOSTANDARD = LVCMOS33 ;	
+NET "sw_f" LOC = "T11" | IOSTANDARD = LVCMOS33 ;	            
+NET "sw_e" LOC = "T10" | IOSTANDARD = LVCMOS33 ;           
+NET "sw_d" LOC = "W14" | IOSTANDARD = LVCMOS33 ;	             
+NET "sw_c" LOC = "Y14" | IOSTANDARD = LVCMOS33 ;	         
+NET "sw_b" LOC = "T12" | IOSTANDARD = LVCMOS33 ;	             
+NET "sw_a" LOC = "U12" | IOSTANDARD = LVCMOS33 ;	 
+
+#Pmod Header JD                                                                                                                  
+NET "sel0"  LOC = "T14" | IOSTANDARD = LVCMOS33 ;	         
+NET "sel1"  LOC = "T15" | IOSTANDARD = LVCMOS33 ;				 
+NET "sel2"  LOC = "P14" | IOSTANDARD = LVCMOS33 ;	              
+#NET "i2c_scl_io"    LOC = "R14" | IOSTANDARD = LVCMOS33 ;       
+#NET "i2c_sda_io"    LOC = "U14" | IOSTANDARD = LVCMOS33 ;        
+NET "red"   LOC = "U15" | IOSTANDARD = LVCMOS33 ;    
+NET "green" LOC = "V17" | IOSTANDARD = LVCMOS33 ;          
+#NET "sel_ser_i2c_o" LOC = "V18" | IOSTANDARD = LVCMOS33 ;   
+ 
+#Pmod Header JE
+NET "a" LOC = "V12" | IOSTANDARD = LVCMOS33 ; 
+NET "b" LOC = "W16" | IOSTANDARD = LVCMOS33 ;             
+NET "c" LOC = "J15" | IOSTANDARD = LVCMOS33 ;                      
+NET "d" LOC = "H15" | IOSTANDARD = LVCMOS33 ;            
+NET "e" LOC = "V13" | IOSTANDARD = LVCMOS33 ;            
+NET "f" LOC = "U17" | IOSTANDARD = LVCMOS33 ;          
+NET "g" LOC = "T17" | IOSTANDARD = LVCMOS33 ;               
+#NET "pio_D_o(7)" LOC = "Y17" | IOSTANDARD = LVCMOS33 ;   

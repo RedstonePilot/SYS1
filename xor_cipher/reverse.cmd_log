@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family zynq -refsym reverse /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/xor_cipher/reverse.sch /home/mike/Documents/SYS1/Labs/LAB_03_encoder_decoder/VHDL/xor_cipher/reverse.sym 

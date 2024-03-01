@@ -1,0 +1,63 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : onehot_encoder_8.vf
+// /___/   /\     Timestamp : 02/29/2024 10:40:37
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath C:/Users/pkq500/xor_cipher/virtual_wires -intstyle ise -family zynq -verilog C:/Users/pkq500/xor_cipher/onehot_encoder_8.vf -w C:/Users/pkq500/xor_cipher/Src/onehot_encoder_8.sch
+//Design Name: onehot_encoder_8
+//Device: zynq
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module onehot_encoder_8(A, 
+                        B, 
+                        C, 
+                        D, 
+                        E, 
+                        F, 
+                        G, 
+                        H, 
+                        Y0, 
+                        Y1, 
+                        Y2);
+
+    input A;
+    input B;
+    input C;
+    input D;
+    input E;
+    input F;
+    input G;
+    input H;
+   output Y0;
+   output Y1;
+   output Y2;
+   
+   
+   OR4  XLXI_7 (.I0(B), 
+               .I1(D), 
+               .I2(F), 
+               .I3(H), 
+               .O(Y0));
+   OR4  XLXI_10 (.I0(C), 
+                .I1(D), 
+                .I2(G), 
+                .I3(H), 
+                .O(Y1));
+   OR4  XLXI_11 (.I0(E), 
+                .I1(F), 
+                .I2(G), 
+                .I3(H), 
+                .O(Y2));
+endmodule
